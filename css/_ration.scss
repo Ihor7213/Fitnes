@@ -70,8 +70,7 @@
 @media(max-width: 768px){
     .ration{
         svg{
-            right: 19%;
-            top: 10%;
+            display: none;
         }
         &_wraper{
             &_content{
@@ -93,6 +92,7 @@
         }
     }
 }
+
 @media(max-width: 425px){
     .ration{
         svg{

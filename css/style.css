@@ -449,6 +449,11 @@ body {
     margin-left: 5px;
   }
 }
+@media (max-width: 450px) {
+  .header_wraper_content_btn_yelou {
+    padding: 20px 20px;
+  }
+}
 @media (max-width: 320px) {
   .header_line_midle {
     display: flex;
@@ -1032,8 +1037,7 @@ body {
 }
 @media (max-width: 768px) {
   .ration svg {
-    right: 19%;
-    top: 10%;
+    display: none;
   }
   .ration_wraper_content {
     position: relative;

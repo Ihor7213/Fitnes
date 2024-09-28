@@ -493,6 +493,19 @@
         }
     }
 }
+@media(max-width: 450px){
+    .header{
+        &_wraper{
+            &_content{
+                &_btn{
+                    &_yelou{
+                        padding: 20px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media(max-width: 320px){
     .header{
         &_line{
