@@ -1,0 +1,103 @@
+.doubt{
+    background-color: #1D1C1C;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &_wraper{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &_link{
+            p{
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 19px;
+                color: white;
+                a{
+                    font-family: var(--second-family);
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #E4AA28;
+                    border-bottom: 1px solid #E4AA28;
+                }
+            }
+        }
+        h2{
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 32px;
+            color: #E4AA28;
+            max-width: 612px;
+        }
+        &_result{
+            display: flex;
+            gap: 22px;
+            &_first{
+                border: 1px solid white;
+                border-radius: 16px;
+                padding: 20px;
+                p{
+                    font-family: var(--second-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: white;
+                    padding-bottom: 20px;
+                }
+                div{
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+            &_man{
+                border: 1px solid white;
+                border-radius: 16px;
+                padding: 20px;
+                p{
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 16px;
+                color: white;
+                padding-bottom: 20px;
+                }                    
+                div{
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1024px){
+    .doubt{
+        &_wraper{
+            &_result{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+@media(max-width: 425px){
+    .doubt{
+        &_wraper{
+            h2{
+                font-weight: 400;
+                font-size: 24px;
+            }
+            &_result{
+                &_man{
+                    display: none;
+                }
+                &_first{
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

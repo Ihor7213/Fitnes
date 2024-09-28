@@ -1,0 +1,17 @@
+body{
+        font-family: "Unbounded", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+@import"./header";
+@import"./about";
+@import"./services";
+@import"./reviews";
+@import"./doubt";
+@import"./ration";
+@import"./footer";

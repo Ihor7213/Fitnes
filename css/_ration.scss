@@ -1,0 +1,116 @@
+.ration{
+    border-bottom: 1px solid #E4AA28;
+    border-top: 1px solid #E4AA28;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(130deg, rgba(32, 30, 33, 0.4) 22.18%, rgba(228, 170, 40, 0.1) 100%);
+    background-color: #1D1C1C;
+    padding: 30px 0;
+    position: relative;
+    svg{
+        position: absolute;
+        bottom: 3%;
+        display: block;
+        height: 95%;
+    }
+    &_wraper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        div{
+            img{
+                position: relative;
+                z-index: 2;
+            }
+        }
+        &_content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 504px;
+            h2{
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 32px;
+                color: white;
+            }
+            p{
+                font-family: var(--font-family);
+                font-weight: 200;
+                font-size: 16px;
+                color: white;
+            }
+            & > &_price{
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 32px;
+                color: white;
+            }
+            button{
+                border-radius: 50px;
+                padding: 20px 40px;
+                background: #E4AA28;
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 11px;
+                text-transform: uppercase;
+                color: black;
+                max-width: 208px;
+            }
+        }
+    }
+}
+@media(max-width: 1024px){
+    .ration{
+            svg{
+                bottom: 0%;
+            }
+    }
+}
+@media(max-width: 768px){
+    .ration{
+        svg{
+            right: 19%;
+            top: 10%;
+        }
+        &_wraper{
+            &_content{
+                position: relative;
+                z-index: 2;
+                h2{
+                    font-weight: 300;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 100;
+                    font-size: 12px;
+                }
+                & > .ration_wraper_content_price{
+                    font-weight: 400;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 425px){
+    .ration{
+        svg{
+            display: none;
+        }
+        &_wraper{
+            display: flex;
+            flex-direction: column-reverse;
+            &_content{
+                text-align: center;
+                width: 100%;
+                button{              
+                    display: block;
+                    margin: 30px auto 80px auto ;
+                    font-weight: 400;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

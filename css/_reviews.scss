@@ -1,0 +1,122 @@
+.reviews{
+    background-color: #1D1C1C;
+    padding-top: 86px;
+    &_wraper{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        h2{
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 32px;
+            color: #E4AA28;
+        }
+        &_support{
+            display: flex;
+            gap: 22px;
+            div{
+                border: 1px solid white;
+                border-radius: 16px;
+                padding: 20px 16px;
+                p{
+                    font-family: var(--second-family);
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: white;
+                    padding-bottom: 18px;
+                }
+            }
+        }
+        &_training{
+            display: flex;
+            gap: 22px;
+            div{
+                border: 1px solid #E4AA28;
+                border-radius: 16px;
+                padding: 20px 16px;
+                p{
+                    font-family: var(--second-family);
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #E4AA28;
+                    padding-bottom: 18px;
+                }
+            }
+        }
+        &_link{
+            p{
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 22px;
+                color: white;
+                a{
+                    font-family: var(--second-family);
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #E4AA28;
+                    border-bottom: 1px solid #E4AA28;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1024px){
+    .reviews{
+        &_wraper{
+            &_training{
+                div{
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1024px){
+    .reviews{
+        &_wraper{
+            &_training{
+                div{
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .reviews{
+        &_wraper{
+            &_support{
+                display: flex;
+                div{
+                    display: none;
+                }
+                .reviews_wraper_support_one {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
+            &_training{
+                display: flex;
+                div{
+                    display: none;
+                }
+                .reviews_wraper_training_one{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
+            // &_link{
+            //     p{
+            //         font-weight: 300;
+            //         font-size: 22px;
+            //     }
+            // }
+        }
+    }
+}
