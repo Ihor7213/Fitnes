@@ -77,6 +77,26 @@
         }
     }
 }
+@media(max-width: 620px){
+    .doubt{
+        &_wraper{
+            &_result{
+                &_first{
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                &_man{
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
 @media(max-width: 425px){
     .doubt{
         &_wraper{

@@ -86,6 +86,29 @@
         }
     }
 }
+@media(max-width: 620px){
+    .reviews{
+        &_wraper{
+            &_support{
+                flex-direction: column;
+                width: 100%;
+                gap: 22px;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            &_training{
+                flex-direction: column;
+                width: 100%;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 425px) {
     .reviews{
         &_wraper{

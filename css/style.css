@@ -814,6 +814,25 @@ body {
     font-size: 15px;
   }
 }
+@media (max-width: 620px) {
+  .reviews_wraper_support {
+    flex-direction: column;
+    width: 100%;
+    gap: 22px;
+  }
+  .reviews_wraper_support div {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews_wraper_training {
+    flex-direction: column;
+    width: 100%;
+  }
+  .reviews_wraper_training div {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (max-width: 425px) {
   .reviews_wraper_support {
     display: flex;
@@ -910,6 +929,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 620px) {
+  .doubt_wraper_result_first div {
+    display: flex;
+    flex-direction: column;
+  }
+  .doubt_wraper_result_man div {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 425px) {
